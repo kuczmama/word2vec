@@ -18,6 +18,10 @@ class Vector
       end
     end
 
+    def []=(index, value)
+        @data[index] = value
+    end
+
     def cosine_similarity(other)
         dot(other) / (norm * other.norm)
     end
@@ -53,7 +57,4 @@ class Vector
         @data[index]
     end
 
-    def []=(index, value)
-        @data[index] = value
-    end
 end
